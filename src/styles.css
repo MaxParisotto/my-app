@@ -1,0 +1,51 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+/* Main container styles */
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main-content {
+    margin-left: 240px; /* Adjust based on sidebar width */
+    padding: 20px;
+    flex: 1; /* Allows the main content to take available space */
+}
+
+/* Dock styles */
+.dock {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333; /* Dark background for dock */
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.dock-item {
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    width: 50px; /* Adjust width as needed */
+}
+
+.dock-item:hover {
+    opacity: 0.8; /* Hover effect */
+}
+
+/* Plugin styles */
+.plugin {
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px; /* Margin for separation */
+}

@@ -1,0 +1,45 @@
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main-content {
+    flex: 1; /* Takes available space */
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background */
+    display: flex;
+    flex-wrap: wrap; /* Allow widgets to wrap */
+    justify-content: flex-start; /* Align widgets to start */
+    align-items: flex-start; /* Align widgets to start */
+}
+
+.dock {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333; /* Dark background for dock */
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.dock-item {
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    width: 100px; /* Adjust width as needed */
+}
+
+.dock-item:hover {
+    opacity: 0.8; /* Hover effect */
+}
+
+.widget {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px; /* Margin for separation */
+    cursor: move; /* Indicate draggable item */
+}
